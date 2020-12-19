@@ -4,13 +4,6 @@
 # github.com/thelinuxchoice/inshackle
 # If you use any part from this code, give me the credits, please, read the License
 
-
-string4=$(openssl rand -hex 32 | cut -c 1-4)
-string8=$(openssl rand -hex 32  | cut -c 1-8)
-string12=$(openssl rand -hex 32 | cut -c 1-12)
-string16=$(openssl rand -hex 32 | cut -c 1-16)
-device="android-$string16"
-uuid=$(openssl rand -hex 32 | cut -c 1-32)
 phone="$string8-$string4-$string4-$string4-$string12"
 guid="$string8-$string4-$string4-$string4-$string12"
 header='Connection: "close", "Accept": "*/*", "Content-type": "application/x-www-form-urlencoded; charset=UTF-8", "Cookie2": "$Version=1" "Accept-Language": "en-US", "User-Agent": "Instagram 10.26.0 Android (18/4.3; 320dpi; 720x1280; Xiaomi; HM 1SW; armani; qcom; en_US)"'
